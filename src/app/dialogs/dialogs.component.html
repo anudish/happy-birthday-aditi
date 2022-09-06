@@ -1,0 +1,153 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dialog view</title>
+</head>
+
+<body>
+  <div *ngIf="data.id==1">
+    <mat-dialog-content class="mat-typography">
+      <h2 mat-dialog-title class="h2">
+        Pani puri is love
+      </h2>
+      <img style="align-items: center;" src="../../assets/Panipuri.jpg" alt="Image not loaded" /> <br>
+      <p> If you opened a pani puri stall, you would honestly finish the stock. <br> That's how much you love it.
+        <br>
+      </p>
+      <input type="button" class="btn btn-primary" (click)="onNoClick()" value="Close">
+    </mat-dialog-content>
+  </div>
+
+
+
+  <div *ngIf="data.id===2">
+
+    <mat-dialog-content class="mat-typography">
+      <h2 mat-dialog-title class="h2">
+        A brownie a day keeps the frownies away
+      </h2>
+      <img style="align-items: center;" src="../../assets/SizzlingBrownie.jpg" alt="Image not loaded" /> <br>
+      <p>
+        The Sizzling Brownie you make is sure to bring smiles!!!! <br> This tempting photo tells the awesomeness of it.
+      </p>
+      <input type="button" class="btn btn-primary" value="close" (click)="onNoClick()">
+    </mat-dialog-content>
+  </div>
+
+
+  <div *ngIf="data.id==3">
+    <mat-dialog-content class="mat-typography">
+
+      <h2 mat-dialog-title class="h2">
+        Seeing this cake, my sweet tooth is tingling
+      </h2>
+      <img style="align-items: center;"  src="../../assets/BirthdayCake.jpg" alt="Image not loaded" /> <br>
+      <p>
+        Fresh out of the oven. Here comes the masterpiece of Chef Aditi.<br> Aditi ne banaya hua cake to khana banta haina boss!
+      </p>
+      <input type="button" class="btn btn-primary" value="close" (click)="onNoClick()">
+    </mat-dialog-content>
+  </div>
+
+  <div *ngIf="data.id==4" >
+    <h2 mat-dialog-title class="h2">
+      Happy Birthday Aadu
+    </h2>
+    <div class="center-block" style="text-align: center;
+      display: block;"><img style="margin-bottom: 20px; width: auto;height: auto;"
+        src="../../assets/copy_image.png" alt="Success">
+      <br>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, ipsam blanditiis soluta saepe libero, optio
+        molestias nihil, molestiae incidunt officia hic excepturi quae in corporis voluptatibus? Aspernatur
+        reprehenderit praesentium ullam?
+      <br> - <i>Madhumita Di</i>
+    </div>
+    <input type="button" class="btn btn-primary" value="close" (click)="onNoClick()">
+  </div>
+
+
+  <div *ngIf="data.id==5">
+    <h2 mat-dialog-title class="h2">
+      Happy Birthday Aditi
+    </h2>
+    <div class="center-block" style="text-align: center;
+      display: block;"><img style="margin-bottom: 20px; width: auto;height: auto;"
+        src="../../assets/copy_image.png" alt="Success">
+      <br>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, ipsam blanditiis soluta saepe libero, optio
+        molestias nihil, molestiae incidunt officia hic excepturi quae in corporis voluptatibus? Aspernatur
+        reprehenderit praesentium ullam?
+      <br> - <i>Chaitu Tai</i>
+    </div>
+    <input type="button" class="btn btn-primary" value="close" (click)="onNoClick()">
+  </div>
+
+  <div *ngIf="data.id==6">
+    <h2 mat-dialog-title class="h2">
+      Happy Birthday Tai
+    </h2>
+    <div class="center-block" style="text-align: center;
+        display: block;"><img style="margin-bottom: 20px; width: auto;height: auto;"
+        src="../../assets/copy_image.png" alt="Success"><br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, ipsam blanditiis soluta saepe libero, optio
+        molestias nihil, molestiae incidunt officia hic excepturi quae in corporis voluptatibus? Aspernatur
+        reprehenderit praesentium ullam?
+        <br> - <i>Srushti</i>
+      </div>
+    <input type="button" class="btn btn-primary" (click)="onNoClick()" value="close">
+  </div>
+
+  <div *ngIf="data.id==7">
+    <h2 mat-dialog-title class="h2" style="font-style: italic; font-family:Arial, Helvetica, sans-serif ;">
+      Some captures of birthday girl
+    </h2>
+     <!-- Carousel Implementation -->
+     <div class="center-block" style="text-align: center;
+     display: block;">
+      <ngb-carousel>  
+        <ng-template ngbSlide>  
+          <img style="margin-bottom: 20px; width: auto;height: auto;"
+          src="../../assets/Birthday_Image.jpg" alt="Success">  
+         
+        </ng-template>  
+        <ng-template ngbSlide>  
+              <img style="margin-bottom: 20px; width: auto;height: auto;"
+              src="../../assets/SliderImage_1.jpg" alt="Success">  
+              
+          </ng-template>  
+          <ng-template ngbSlide>  
+              <img style="margin-bottom: 20px; width: auto;height: auto;"
+              src="../../assets/SliderImage_2.jpg" alt="Success">  
+             
+          </ng-template>  
+          <ng-template ngbSlide>  
+              <img style="margin-bottom: 20px; width: auto;height: auto;"
+              src="../../assets/SliderImage_3.jpg" alt="Success">  
+             
+          </ng-template>  
+          <ng-template ngbSlide>  
+            <img style="margin-bottom: 20px; width: auto;height: auto;"
+            src="../../assets/SliderImage_4.jpg" alt="Success">  
+           
+        </ng-template>  
+        <ng-template ngbSlide>  
+          <img style="margin-bottom: 20px; width: auto;height: auto;"
+          src="../../assets/SliderImage_5.jpg" alt="Success">  
+         
+      </ng-template>  
+      </ngb-carousel>  
+      
+    <br>
+    <!-- Feature -->
+   <!-- <div class="center-block" style="text-align: center;
+        display: block;"><img style="margin-bottom: 20px; width: auto;height: auto;"
+        src="../../assets/Birthday_Image.jpg" alt="Success"> --> <br> 
+    </div>
+    <input type="button" class="btn btn-primary" (click)="onNoClick()" value="close">
+  </div>
+  
+</body>
+
+</html>
