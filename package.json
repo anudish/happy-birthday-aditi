@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "postinstall": "ng build --output-path happy-birthday-aditi --aot --prod"
+    "postinstall": "npm run build"
   },
   "private": true,
   "dependencies": {
