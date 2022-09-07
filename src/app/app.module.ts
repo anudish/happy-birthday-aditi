@@ -53,7 +53,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     MatDialogModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    NgbModule
+    NgbModule    
   ],
   providers: [],
   bootstrap: [AppComponent]

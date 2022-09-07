@@ -40,7 +40,7 @@ export class AnudishComponent implements OnInit {
 
   
 
-  colorSelected : string = 'red';
+    colorSelected : string = 'red';
 
   source : Observable<number> = timer(1000, 500);
 
