@@ -1,6 +1,6 @@
 img{
-    height:150px;
-    width:100%;
+    height:auto;
+    width:auto;
   }
   
   div [class^="col-"]{
@@ -11,6 +11,11 @@ img{
     transition:0.5s;
     cursor:pointer;
   }
+ 
+  .card:hover {
+    color: #fdbd56; 
+  }
+ 
   .card-title{  
     font-size:15px;
     transition:1s;
