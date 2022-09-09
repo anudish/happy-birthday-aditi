@@ -21,7 +21,6 @@ import { DialogsComponent } from './dialogs/dialogs.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { FamilyComponent } from './family/family.component';
 import { FriendsComponent } from './friends/friends.component';
-import { AnudishComponent } from './anudish/anudish.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';  
 
 @NgModule({
@@ -32,8 +31,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     DialogsComponent,
     NotfoundComponent,
     FamilyComponent,
-    FriendsComponent,
-    AnudishComponent    
+    FriendsComponent  
   ],
   imports: [
     BrowserModule,

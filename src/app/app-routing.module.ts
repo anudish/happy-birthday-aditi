@@ -4,15 +4,12 @@ import { HomeComponent } from './home/home.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { FamilyComponent } from './family/family.component';
 import { FriendsComponent } from './friends/friends.component';
-import { AnudishComponent } from './anudish/anudish.component';
-
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent},
   { path: '', component: HomeComponent},
   {path: 'family', component: FamilyComponent},
   {path: 'friends', component: FriendsComponent},
-  {path: 'anudish', component: AnudishComponent},
   {path: '**', component: NotfoundComponent}
 ];
 
